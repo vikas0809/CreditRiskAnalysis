@@ -12,7 +12,7 @@ We are performing different algorithms to predict credit risk which include:
 - 2019 loan status csv datafile
 - imbalanced-learn and scikik-learn libraries.
 
-##Analysis
+## Analysis
 
 The first step to perform any resampling or any analysis is to load the data into data frames and perform the exploration part to check for any null values and outliers. The next step is to drop all the null values and change the column names.
 
@@ -62,7 +62,7 @@ We will perform the same steps above using the SMOTE oversampling technique and 
 
 ![](Images/8.png)
 
-###UnderSampling
+### UnderSampling
 
 In this section, we will test undersampling algorithms to determine which algorithm results in the best performance compared to the oversampling algorithms above. You will undersample the data using the Cluster Centroids algorithm and complete the following steps:
 
@@ -79,7 +79,7 @@ This approach applies the same steps to create balanced data for our model. In t
 ![](Images/9.png)
 
 
-###Oversampling and Undersampling combined
+### Oversampling and Undersampling combined
 
 In this section, we will test a combination of over-sampling and under-sampling algorithms to determine if the algorithm results in the best performance compared to the other sampling algorithms above. You will resample the data using the SMOTEENN algorithm and complete the following steps:
 
@@ -115,13 +115,13 @@ A balanced random forest classifier is the extension of the bagging technique th
 
 ![](Images/12.png)
 
-####Easy Ensemble AdaBoost Classifier
+#### Easy Ensemble AdaBoost Classifier
 
 Easy Ensemble Adaboost classifier combines multiple classifiers to increase the accuracy of the classifiers. Adaboost is an iterative ensemble model. This builds a strong classifier by combining multiple poorly performing classifiers so that you get high accuracy strong classifier.
 
 ![](Images/13.png)
 
-###Summary
+### Summary
 
 We practised different approaches of over-sampling and under-sampling and oversampling algorithms to create balanced data for our model. Different approaches work better on different data sets depending on the number of classifiers and imbalance in the dataset.
 

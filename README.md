@@ -56,11 +56,35 @@ Just, we will train our Logistic Regression model using the resample data and ca
 
 ![](Images/7.png)
 
+##### RESULTS
+
+- Before low_risk': 51352, 'high_risk': 260
+- After 'low_risk': 51352 , 'high_risk': 51352
+- Accuracy: 0.649536
+- Average/Total Precision: 0.99
+- Average/Total Recall: 0.68
+- Average/Total f1 Score: 0.80
+- Average/Total support: 17205 
+
+For reference and meaning of the scores above, please refer to [table explained](Images/14.png).
+
 #### SMOTE OverSampling
 
 We will perform the same steps above using the SMOTE oversampling technique and then use resampled data to train our logistic regression model and compare the accuracy.
 
 ![](Images/8.png)
+
+##### RESULTS
+
+- Before low_risk': 51352, 'high_risk': 260
+- After 'low_risk': 51352 , 'high_risk': 51352 
+- Accuracy: 0.6443721
+- Average/Total Precision: 0.99
+- Average/Total Recall: 0.36
+- Average/Total f1 Score: 0.79
+- Average/Total support: 17205 
+
+For reference and meaning of the scores above, please refer to [table explained](Images/14.png).
 
 ### UnderSampling
 
@@ -74,9 +98,21 @@ In this section, we will test undersampling algorithms to determine which algori
 
 #### ClusterCentrid undersampling.
 
-This approach applies the same steps to create balanced data for our model. In this under-sampling technique, we use cluster centroid to under-sample data and then use that under-sampled data to train our regression model and check its accuracy. Notice the number of high-risk and low risk is about 260, which was about over 50,000 in the over-sampling approach.
+This approach applies the same steps to create balanced data for our model. In this under-sampling technique, we use cluster centroid to under-sample data and then use that under-sampled data to train our regression model and check its accuracy. Notice the number of high-risk and low-risk is about 260, which was about over 50,000 in the over-sampling approach.
 
 ![](Images/9.png)
+
+##### RESULTS
+
+- Before low_risk': 51352, 'high_risk': 260
+- After 'low_risk': 260 , 'high_risk': 260 
+- Accuracy: 0.52892297
+- Average/Total Precision: 0.99
+- Average/Total Recall: 0.45
+- Average/Total f1 Score: 0.62
+- Average/Total support: 17205 
+
+For reference and meaning of the scores above, please refer to [table explained](Images/14.png).
 
 
 ### Oversampling and Undersampling combined
@@ -95,7 +131,17 @@ There is another approach in which we perform under-sampling and over-sampling o
 
 ![](Images/10.png)
 
-If you notice in this approach the total number of high-risk and low-risk are not the exact numbers, they are balanced but not equal.
+##### RESULTS
+
+- Before low_risk': 51352, 'high_risk': 260
+- After 'low_risk': 46390 , 'high_risk': 51351 
+- Accuracy: 0.63287
+- Average/Total Precision: 0.99
+- Average/Total Recall: 0.57
+- Average/Total f1 Score: 0.72
+- Average/Total support: 17205 
+
+For reference and meaning of the scores above, please refer to [table explained](Images/14.png).
 
 ### Ensemble Learners
 
@@ -115,11 +161,32 @@ A balanced random forest classifier is the extension of the bagging technique th
 
 ![](Images/12.png)
 
+##### RESULTS
+
+- Accuracy: 0.795997
+- Average/Total Precision: 0.99
+- Average/Total Recall: 0.91
+- Average/Total f1 Score: 0.95
+- Average/Total support: 17205 
+
+For reference and meaning of the scores above, please refer to [table explained](Images/14.png).
+
+
 #### Easy Ensemble AdaBoost Classifier
 
 Easy Ensemble Adaboost classifier combines multiple classifiers to increase the accuracy of the classifiers. Adaboost is an iterative ensemble model. This builds a strong classifier by combining multiple poorly performing classifiers so that you get high accuracy strong classifier.
 
 ![](Images/13.png)
+
+##### RESULTS
+
+- Accuracy:0.9252521
+- Average/Total Precision: 0.99
+- Average/Total Recall: 0.94
+- Average/Total f1 Score: 0.97
+- Average/Total support: 17205
+
+For reference and meaning of the scores above, please refer to [table explained](Images/14.png).
 
 ### Summary
 
